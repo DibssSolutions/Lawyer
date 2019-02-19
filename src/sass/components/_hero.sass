@@ -1,0 +1,43 @@
+.hero
+    min-height: 100vh
+    position: relative
+    overflow: hidden
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    display: flex
+    &__inner
+    &__content
+        display: flex
+        align-items: center
+        justify-content: space-between
+        flex-wrap: wrap
+        height: 100%
+        color: $white
+    &__left
+        flex: 0 0 58.33333%
+        max-width: 58.33333%
+    &__right
+        flex: 0 0 33.33333%
+        max-width: 33.33333%
+        margin-left: 20px
+        height: 100%
+
+.hero-menu
+    height: 100%
+    &__item
+        position: relative
+        height: 33.33333%
+        display: flex
+        align-items: center
+        transition: height .3s
+        border: 1px solid $border
+        &:first-child,
+        &:last-child
+            border-top: none
+            border-bottom: none
+    &__wrap
+        padding: 20px 40px
+        width: 100%
+        display: flex
+        align-items: center

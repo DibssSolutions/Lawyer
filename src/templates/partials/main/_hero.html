@@ -1,0 +1,42 @@
+<section class="hero" style="background-image: url("./img/hero__bg.jpg");">
+    <div class="hero__inner inner">
+        <div class="hero__content">
+            <div class="hero__left" data-aos="fade-up" data-aos-anchor=".section_intro" data-aos-delay="600">
+                <h4 class="hero__subtitle">адвокатская контора</h4>
+                <h1 class="hero__title title-lg">Кремер Юлии Дмитриевны</h1>
+                <div class="hero__text">более 20 лет опыта и 1000 выигранных дел</div>
+                <div class="hero__btn">
+                    <button class="btn btn_outline">
+                        <span class="btn__text">узнать больше</span>
+                        <span class="btn__icon">{{ mixins.icon('arrow-right') }}</span>
+                    </button>
+                </div>
+            </div>
+            <div class="hero__right">
+                <div class="hero__menu hero-menu">
+                    {% for item in [
+                        'Арбитражные<br>дела',
+                        'Уголовные<br>дела',
+                        'Гражданские<br>дела'
+                    ] %}
+                        
+                        <a href="#" class="hero-menu__item">
+                            <span class="hero-menu__wrap">
+                                <span class="hero-menu__name">{{ item | safe }}</span>
+                                <span class="hero-menu__continue">
+                                    <span class="hero-menu__more">
+                                        <span class="arrow-more">
+                                            <span class="arrow-more__text">Подробнее</span>
+                                            <span class="arrow-more__icon">{{ mixins.icon('arrow-long') }}</span>
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </a>
+
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

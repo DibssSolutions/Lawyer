@@ -14,48 +14,124 @@
   <body>
     <!-- BEGIN content -->
     <div class="out">
-      <h1>Index page</h1>
-      <p>Hello from partials/_header.html</p>
-      <svg class="icon icon-facebook">
-        <use xlink:href="img/sprite.svg#icon-facebook"></use>
-      </svg>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="checkbox">
-          <span class="checkbox__text">checkbox</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <p>
-        <!-- begin input -->
-        <label class="checkbox">
-          <input type="checkbox" name="exemple-name" checked>
-          <span class="checkbox__text">checkbox-checked</span>
-        </label>
-        <!-- end input -->
-      </p>
-      <!-- begin input -->
-      <label class="radio">
-        <input type="radio" name="exemple-name">
-        <span class="radio__text">text</span>
-      </label>
-      <!-- end input -->
-      <!-- begin breadcrumbs -->
-      <ul class="breadcrumbs">
-        <li class="breadcrumbs__item">
-          <a href="#">Главная</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <a href="#">Внутренняя</a>
-        </li>
-        <li class="breadcrumbs__item">
-          <span>Корзина</span>
-        </li>
-      </ul>
-      <!-- end breadcrumbs -->
-      <li>Item1</li>
-      <li>Item2</li>
+      <header class="header js-header">
+        <button class="burger js-burger">
+          <span class="burger__icon">
+            <span class="burger__line burger__line_md"></span>
+            <span class="burger__line"></span>
+            <span class="burger__line burger__line_sm"></span>
+          </span>
+        </button>
+        <div class="burger-menu">
+          <div class="burger-menu__inner">
+            <div class="burger-menu__content">
+              <ul class="burger-menu__list">
+                <li class="burger-menu__item">
+                  <a href="№" class="burger-menu__link">Главная</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="№" class="burger-menu__link">Услуги</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="№" class="burger-menu__link">Юридическим лицам</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="№" class="burger-menu__link">Физическим лицам</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="№" class="burger-menu__link">Статьи</a>
+                </li>
+                <li class="burger-menu__item">
+                  <a href="№" class="burger-menu__link">Контакты</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="header__wrap">
+          <div class="header__contacts">
+            <a href="tel:+79104449659" class="phone">+7 910 444 96 59</a>
+            <a href="mailto:test@mail.com" class="email">test@mail.com</a>
+          </div>
+        </div>
+      </header>
+      <div class="main">
+        <section class="hero" style="background-image: url(" ./img/hero__bg.jpg");"> <div class="hero__inner inner">
+          <div class="hero__content">
+            <div class="hero__left" data-aos="fade-up" data-aos-anchor=".section_intro" data-aos-delay="600">
+              <h4 class="hero__subtitle">адвокатская контора</h4>
+              <h1 class="hero__title title-lg">Кремер Юлии Дмитриевны</h1>
+              <div class="hero__text">более 20 лет опыта и 1000 выигранных дел</div>
+              <div class="hero__btn">
+                <button class="btn btn_outline">
+                  <span class="btn__text">узнать больше</span>
+                  <span class="btn__icon">
+                    <svg class="icon icon-arrow-right">
+                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                    </svg>
+                  </span>
+                </button>
+              </div>
+            </div>
+            <div class="hero__right">
+              <div class="hero__menu hero-menu">
+                <a href="#" class="hero-menu__item">
+                  <span class="hero-menu__wrap">
+                    <span class="hero-menu__name">Арбитражные<br>дела</span>
+                    <span class="hero-menu__continue">
+                      <span class="hero-menu__more">
+                        <span class="arrow-more">
+                          <span class="arrow-more__text">Подробнее</span>
+                          <span class="arrow-more__icon">
+                            <svg class="icon icon-arrow-long">
+                              <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
+                            </svg>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="hero-menu__item">
+                  <span class="hero-menu__wrap">
+                    <span class="hero-menu__name">Уголовные<br>дела</span>
+                    <span class="hero-menu__continue">
+                      <span class="hero-menu__more">
+                        <span class="arrow-more">
+                          <span class="arrow-more__text">Подробнее</span>
+                          <span class="arrow-more__icon">
+                            <svg class="icon icon-arrow-long">
+                              <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
+                            </svg>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </a>
+                <a href="#" class="hero-menu__item">
+                  <span class="hero-menu__wrap">
+                    <span class="hero-menu__name">Гражданские<br>дела</span>
+                    <span class="hero-menu__continue">
+                      <span class="hero-menu__more">
+                        <span class="arrow-more">
+                          <span class="arrow-more__text">Подробнее</span>
+                          <span class="arrow-more__icon">
+                            <svg class="icon icon-arrow-long">
+                              <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
+                            </svg>
+                          </span>
+                        </span>
+                      </span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+      </div>
+      </section>
+    </div>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

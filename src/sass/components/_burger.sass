@@ -8,6 +8,7 @@
     align-items: center
     justify-content: center
     transition: background-color .5s ease
+    z-index: 1
     +hover
         .burger__line
             width: 100%
@@ -62,7 +63,7 @@
     transition: transform .3s ease, opacity .3s ease
     transform: translateX(-100%)
     opacity: 0
-    &.is-active
+    &.is-open
         transform: translateX(0)
         opacity: 1
     &__inner

@@ -1,6 +1,45 @@
 body
 	background: #FFF
 	line-height: 1.4
+	font-size: 16px
 	a
 		text-decoration: none
+
+.title-lg
+	font-size: 60px
+	letter-spacing: .2px
+	font-weight: 300
+
+
+.btn
+	padding: 0 40px
+	height: 60px
+	text-transform: uppercase
+	display: inline-flex
+	align-items: center
+	justify-content: center
+	overflow: hidden
+	font-size: 14px
+	transition: background-color .3s ease, color .3s ease
+	&_white
+		color: $white
+	&_outline
+		background-color: transparent
+		border: 1px solid $btn-border
+		+hover
+			background-color: $white
+			color: $dark
+			.btn__icon
+				transform: translateX(5px)
+			.btn__icon_green
+				color: $dark
+	&__icon
+		font-size: 7px
+		margin-left: 20px
+		transition: color .3s ease, transform .3s ease
+		svg
+			display: block
+			max-width: 100%
+		&_green
+			color: $main
 

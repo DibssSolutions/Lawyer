@@ -15,7 +15,7 @@
     <!-- BEGIN content -->
     <div class="out">
       <header class="header js-header">
-        <button class="burger js-burger">
+        <button class="burger js-burger" type="button">
           <span class="burger__icon">
             <span class="burger__line burger__line_md"></span>
             <span class="burger__line"></span>
@@ -56,82 +56,105 @@
         </div>
       </header>
       <div class="main">
-        <section class="hero" style="background-image: url(" ./img/hero__bg.jpg");"> <div class="hero__inner inner">
-          <div class="hero__content">
-            <div class="hero__left" data-aos="fade-up" data-aos-anchor=".section_intro" data-aos-delay="600">
-              <h4 class="hero__subtitle">адвокатская контора</h4>
-              <h1 class="hero__title title-lg">Кремер Юлии Дмитриевны</h1>
-              <div class="hero__text">более 20 лет опыта и 1000 выигранных дел</div>
-              <div class="hero__btn">
-                <button class="btn btn_outline">
-                  <span class="btn__text">узнать больше</span>
-                  <span class="btn__icon">
-                    <svg class="icon icon-arrow-right">
-                      <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+        <section class="hero" style="background-image: url('img/hero_bg.jpg');">
+          <div class="hero__inner inner">
+            <div class="hero__content">
+              <div class="hero__contacts">
+                <a href="tel:+79104449659" class="hero__link">
+                  <span class="hero__link-icon">
+                    <svg class="icon icon-phone">
+                      <use xlink:href="img/sprite.svg#icon-phone"></use>
                     </svg>
                   </span>
-                </button>
+                  <span class="hero__link-text">+7 910 444 96 59</span>
+                </a>
               </div>
-            </div>
-            <div class="hero__right">
-              <div class="hero__menu hero-menu">
-                <a href="#" class="hero-menu__item">
-                  <span class="hero-menu__wrap">
-                    <span class="hero-menu__name">Арбитражные<br>дела</span>
-                    <span class="hero-menu__continue">
-                      <span class="hero-menu__more">
-                        <span class="arrow-more">
-                          <span class="arrow-more__text">Подробнее</span>
-                          <span class="arrow-more__icon">
-                            <svg class="icon icon-arrow-long">
-                              <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
-                            </svg>
+              <div class="hero__left" data-aos="fade-up" data-aos-anchor=".section_intro" data-aos-delay="600">
+                <h4 class="hero__subtitle">адвокатская контора</h4>
+                <h1 class="hero__title title-lg">Кремер Юлии Дмитриевны</h1>
+                <div class="hero__text">более 20 лет опыта и 1000 выигранных дел</div>
+                <div class="hero__btn">
+                  <a class="btn btn_outline btn_white" href="#">
+                    <span class="btn__text">узнать больше</span>
+                    <span class="btn__icon btn__icon_green">
+                      <svg class="icon icon-arrow-right">
+                        <use xlink:href="img/sprite.svg#icon-arrow-right"></use>
+                      </svg>
+                    </span>
+                  </a>
+                </div>
+              </div>
+              <div class="hero__right">
+                <div class="hero__menu hero-menu">
+                  <a href="#" class="hero-menu__item">
+                    <span class="hero-menu__wrap">
+                      <span class="hero-menu__name">Арбитражные<br>дела</span>
+                      <span class="hero-menu__continue">
+                        <span class="hero-menu__more">
+                          <span class="arrow-more">
+                            <span class="arrow-more__text">Подробнее</span>
+                            <span class="arrow-more__icon">
+                              <span class="arrow-more__icon-inner">
+                                <span class="arrow-more__icon-wrap">
+                                  <svg class="icon icon-arrow-long">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
+                                  </svg>
+                                </span>
+                              </span>
+                            </span>
                           </span>
                         </span>
                       </span>
                     </span>
-                  </span>
-                </a>
-                <a href="#" class="hero-menu__item">
-                  <span class="hero-menu__wrap">
-                    <span class="hero-menu__name">Уголовные<br>дела</span>
-                    <span class="hero-menu__continue">
-                      <span class="hero-menu__more">
-                        <span class="arrow-more">
-                          <span class="arrow-more__text">Подробнее</span>
-                          <span class="arrow-more__icon">
-                            <svg class="icon icon-arrow-long">
-                              <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
-                            </svg>
+                  </a>
+                  <a href="#" class="hero-menu__item">
+                    <span class="hero-menu__wrap">
+                      <span class="hero-menu__name">Уголовные<br>дела</span>
+                      <span class="hero-menu__continue">
+                        <span class="hero-menu__more">
+                          <span class="arrow-more">
+                            <span class="arrow-more__text">Подробнее</span>
+                            <span class="arrow-more__icon">
+                              <span class="arrow-more__icon-inner">
+                                <span class="arrow-more__icon-wrap">
+                                  <svg class="icon icon-arrow-long">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
+                                  </svg>
+                                </span>
+                              </span>
+                            </span>
                           </span>
                         </span>
                       </span>
                     </span>
-                  </span>
-                </a>
-                <a href="#" class="hero-menu__item">
-                  <span class="hero-menu__wrap">
-                    <span class="hero-menu__name">Гражданские<br>дела</span>
-                    <span class="hero-menu__continue">
-                      <span class="hero-menu__more">
-                        <span class="arrow-more">
-                          <span class="arrow-more__text">Подробнее</span>
-                          <span class="arrow-more__icon">
-                            <svg class="icon icon-arrow-long">
-                              <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
-                            </svg>
+                  </a>
+                  <a href="#" class="hero-menu__item">
+                    <span class="hero-menu__wrap">
+                      <span class="hero-menu__name">Гражданские<br>дела</span>
+                      <span class="hero-menu__continue">
+                        <span class="hero-menu__more">
+                          <span class="arrow-more">
+                            <span class="arrow-more__text">Подробнее</span>
+                            <span class="arrow-more__icon">
+                              <span class="arrow-more__icon-inner">
+                                <span class="arrow-more__icon-wrap">
+                                  <svg class="icon icon-arrow-long">
+                                    <use xlink:href="img/sprite.svg#icon-arrow-long"></use>
+                                  </svg>
+                                </span>
+                              </span>
+                            </span>
                           </span>
                         </span>
                       </span>
                     </span>
-                  </span>
-                </a>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
+        </section>
       </div>
-      </section>
-    </div>
     </div>
     <!-- END content -->
     <!-- BEGIN scripts -->

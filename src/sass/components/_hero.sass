@@ -8,12 +8,30 @@
     display: flex
     &__inner
     &__content
+        position: relative
         display: flex
         align-items: center
         justify-content: space-between
         flex-wrap: wrap
         height: 100%
         color: $white
+    &__contacts
+        position: absolute
+        left: 0
+        top: 0
+    &__link
+        display: flex
+        align-items: center
+        height: 100px
+        color: $white
+        font-size: 20px
+        &-icon
+            font-size: 25px
+            svg
+                display: block
+                max-width: 100%
+        &-text
+            margin-left: 30px
     &__left
         flex: 0 0 58.33333%
         max-width: 58.33333%
@@ -22,6 +40,19 @@
         max-width: 33.33333%
         margin-left: 20px
         height: 100%
+    &__subtitle
+        font-size: 12px
+        color: rgba($white,.2)
+        text-transform: uppercase
+        letter-spacing: 2.59px
+    &__title
+        &:not(:first-child)
+            margin-top: 30px
+    &__text
+        font-size: 16px
+        text-transform: uppercase
+        letter-spacing: 1.4px
+        margin: 40px 0 64px
 
 .hero-menu
     height: 100%
@@ -30,8 +61,17 @@
         height: 33.33333%
         display: flex
         align-items: center
-        transition: height .3s
+        transition: height .3s ease, background-color .3s ease, border-color .3s ease
         border: 1px solid $border
+        color: $white
+        +hover
+            background-color: rgba($menu-bg,.7)
+            border-color: rgba($menu-bg,.7)
+            .hero-menu__continue
+                max-height: 80px
+            .hero-menu__more
+                opacity: 1
+                transform: translateX(0)
         &:first-child,
         &:last-child
             border-top: none
@@ -39,5 +79,60 @@
     &__wrap
         padding: 20px 40px
         width: 100%
+        display: flex
+        justify-content: center
+        flex-direction: column
+    &__name,
+    &__continue,
+    &__more
+        display: block
+    &__continue
+        height: 80px
+        max-height: 0
+        position: relative
+        overflow: hidden
+        transition: max-height .3s ease
+    &__more
+        position: absolute
+        left: 0
+        bottom: 0
+        opacity: 0
+        transform: translateX(-40px)
+        transition: transform .3s ease, opacity .3s ease
+        transition-delay: .2s
+        color: rgba($white,.3)
+        font-size: 12px
+
+
+.arrow-more
+    display: flex
+    // align-items: center
+    +hover
+        .arrow-more__icon-inner
+            max-width: 70px
+    &__icon
+        position: relative
+        max-width: 84px
+        width: 84px
+        // height: 100%
+        margin-left: 20px
+        .icon
+            display: block
+            // max-width: 100%
+    &__icon-inner
+        position: absolute
+        right: 0
+        max-width: 84px
+        width: 100%
+        overflow: hidden
+        height: 100%
+        transition: max-width .5s ease
+    &__icon-wrap
+        max-width: 84px
+        width: 84px
+        position: absolute
+        top: 0
+        bottom: 0
+        right: 0
         display: flex
         align-items: center

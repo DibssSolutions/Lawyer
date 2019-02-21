@@ -1,0 +1,78 @@
+<section class="cards">
+    <div class="cards__inner inner" data-aos="fade-up">
+        <div class="cards__content">
+            <div class="cards__col">
+                <div class="cards__item cards-item">
+                    <div class="cards-item__header cards-item__header_mb title-sm">
+                        Помогаю в решении:
+                    </div>
+                    <ul class="cards-item__list">
+                        {% for item in [
+                            'Я развожусь и делю имущество',
+                            'Я получаю наследство',
+                            'Я обращаюсь в арбитраж',
+                            'Я ответчик в суде',
+                            'У меня вопрос по недвижимости',
+                            'На меня возбудили уголовное дело'
+                        ] %}
+                            <li class="cards-item__li">
+                                <a href="#" class="cards-item__link">{{ item }}</a>
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+            <div class="cards__col cards__col_order">
+                <div class="cards__col-wrap">
+                    <div class="cards__item-wrap">
+                        <div class="cards-item">
+                            <div class="cards-item__header title-sm">Статьи</div>
+                            <div class="article-cart">
+                                <div class="article-cart__text">
+                                    <a href="#">По какой цене суд делит имущество супругов при разводе?</a>
+                                </div>
+                                <div class="article-cart__more">
+                                    <a href="#" class="arrow-more">
+                                        <span class="arrow-more__text">Смотреть все</span>
+                                        <span class="arrow-more__icon">
+                                            <span class="arrow-more__icon-inner">
+                                                <span class="arrow-more__icon-wrap">
+                                                    {{ mixins.icon('arrow-long') }}
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cards__item-wrap">
+                        <div class="cards-item">
+                            <div class="cards-item__header title-sm">Контакты</div>
+                            <div class="cards-item__phone">
+                                <a href="tel:tel:+79104449659">+7 910 444 96 59</a>
+                            </div>
+                            <address>
+                                г. Москва, м. Красные ворота<br>
+                                ул. Садовая-Спасская дом 21/1<br>
+                                офис 321
+                            </address>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cards__col">
+                <div class="cards-item cards-item_image" style="background-image:url(./img/nc.jpg)">
+                    <div class="cards-item__header title-sm">Сопровождение бракоразводного процесса и раздела имущества</div>
+                    <div class="cards-item__text">Оценим возможные риски, выберем стратегию ведение дела, оформим документы</div>
+                    <div class="cards-item__btn">
+                        <a href="" class="btn btn_outline btn_white btn_w100">
+                            <span class="btn__text">ПОДРОБНЕЕ</span>
+                            <span class="btn__icon">{{ mixins.icon('arrow-right') }}</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

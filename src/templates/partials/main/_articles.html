@@ -1,0 +1,78 @@
+<section class="section-articles">
+    <div class="section-articles__inner inner" data-aos="fade-up">
+        <h2 class="section-articles__title title">
+            Судебная практика
+        </h2>
+        <div class="section-articles__wrap">
+            {% for item in [
+                {
+                    img: 'article1.jpg',
+                    date: '17 ДЕКАБРЯ 2018',
+                    title: 'Споры арендаторов и арендодателей',
+                    text: 'Главной причиной всех конфликтов между собственниками и арендаторами является плохо'
+                },
+                {
+                    img: 'article2.jpg',
+                    date: '15 ДЕКАБРЯ 2018',
+                    title: 'Подлежат ли разделу денежные средства на счете',
+                    text: 'Согласно закону, разделу подлежит не только движимое и недвижимое имущество, но и'
+                },
+                {
+                    img: 'article3.jpg',
+                    date: '15 ДЕКАБРЯ 2018',
+                    title: 'Как делить кредиты и долги после развода',
+                    text: 'Согласно закону не только имущество, которое было приобретено в браке, подлежит разделу'
+                },
+                {
+                    img: 'article4.jpg',
+                    date: '15 ДЕКАБРЯ 2018',
+                    title: 'Как наследуют имущество внебрачные дети?',
+                    text: 'Согласно ст. 1142 ГК РФ наследниками первой очереди являются дети, супруг и родители'
+                },
+                {
+                    img: 'article5.jpg',
+                    date: '15 ДЕКАБРЯ 2018',
+                    title: 'Внебрачные дети. Права',
+                    text: 'Внебрачные дети наделены такими же правами, как и дети, которые рождены в'
+                },
+                {
+                    img: 'article6.jpg',
+                    date: '15 ДЕКАБРЯ 2018',
+                    title: 'Часто задаваемые вопросы про материнский капитал',
+                    text: 'Раздел "Вопросы и ответы" по материнскому капиталу включает в себя вопросы, которые'
+                }
+            ] %}
+                
+                <div class="section-articles__col">
+                    <a href="#" class="article-card">
+                        <span class="article-card__img">
+                            <img src="./img/{{ item.img }}" alt="article image">
+                        </span>
+                        <span class="article-card__date">
+                            {{ item.date }}
+                        </span>
+                        <span class="article-card__title title-sm">
+                            {{ item.title }}
+                        </span>
+                        <span class="article-card__text">
+                            {{ item.text }}
+                        </span>
+                        <span class="article-card__more">
+                            <span class="arrow-more">
+                                <span class="arrow-more__text">Читать далее</span>
+                                <span class="arrow-more__icon">
+                                    <span class="arrow-more__icon-inner">
+                                        <span class="arrow-more__icon-wrap">
+                                            {{ mixins.icon('arrow-long') }}
+                                        </span>
+                                    </span>
+                                </span>
+                            </span>
+                        </span>
+                    </a>
+                </div>
+
+            {% endfor %}
+        </div>
+    </div>
+</section>

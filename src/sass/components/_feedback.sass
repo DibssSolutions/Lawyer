@@ -1,0 +1,63 @@
+.section-feedback
+    padding-bottom: 120px
+    background-color: $gray-bg
+    overflow: hidden
+    &__wrap
+        display: flex
+        flex-wrap: wrap
+    &__left
+        padding-top: 120px
+        flex: 0 0 58.33333%
+        max-width: 58.33333%
+    &__right
+        position: relative
+        padding-top: 120px
+        padding-left: 90px
+        flex: 0 0 41.66667%
+        max-width: 41.66667%
+        z-index: 1
+        &:after
+            content: ''
+            position: absolute
+            top: 0
+            left: 0
+            z-index: -1
+            bottom: -120px
+            width: 50vw
+            background-color: $white
+    &__title
+        margin-bottom: 32px
+        span
+            color: $main
+
+
+.feedback-card
+    height: 366px
+    padding: 70px 140px 70px 70px
+    background-color: #29292a
+    color: $white
+    cursor: pointer
+    +hover
+        .arrow-more__text,
+        .arrow-more__icon
+            color: rgba($white,.5)
+        .arrow-more__icon-inner
+            max-width: 70px
+    &:not(:first-child)
+        margin-top: 30px
+    &__name
+        font-size: 18px
+        font-weight: 300
+    &__text
+        margin-top: 21px
+        height: 100px
+        overflow: hidden
+        color: rgba($white,.8)
+        font-size: 14px
+        line-height: 1.72
+        letter-spacing: 0.3px
+    &__more
+        margin-top: 47px
+        .arrow-more__text,
+        .arrow-more__icon
+            color: rgba($white,.3)

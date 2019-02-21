@@ -5,3 +5,23 @@
 	font-family: $name
 	font-style: $style
 	font-weight: $weight
+
+$manrope: 'Manrope'
+=manrope
+	font-family: 'Manrope', Arial, -apple-system, BlinkMacSystemFont, 'Oxygen', sans-serif
+
+@font-face
+  +fontdefault(normal, 400, $manrope)
+  +fontpath('Manrope-Regular', 'Manrope-Regular', manrope-regular)
+
+@font-face
+  +fontdefault(normal, 700, $manrope)
+  +fontpath('Manrope-Bold', 'Manrope-Bold', manrope-bold)
+
+@font-face
+  +fontdefault(normal, 300, $manrope)
+  +fontpath('Manrope-Light', 'Manrope-Light', manrope-light)
+
+@font-face
+  +fontdefault(normal, 500, $manrope)
+  +fontpath('Manrope-Medium', 'Manrope-Medium', manrope-medium)

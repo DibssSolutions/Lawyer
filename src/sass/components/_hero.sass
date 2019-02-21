@@ -65,6 +65,7 @@
         border: 1px solid $border
         color: $white
         +hover
+            color: $white
             background-color: rgba($menu-bg,.7)
             border-color: rgba($menu-bg,.7)
             .hero-menu__continue
@@ -101,21 +102,27 @@
         transition: transform .3s ease, opacity .3s ease
         transition-delay: .2s
         color: rgba($white,.3)
-        font-size: 12px
 
 
 .arrow-more
     display: flex
+    font-size: 12px
+    color: $dark
     // align-items: center
     +hover
+        color: currentColor
         .arrow-more__icon-inner
             max-width: 70px
+    &__text
+        transition: color .5s ease
     &__icon
         position: relative
         max-width: 84px
         width: 84px
         // height: 100%
         margin-left: 20px
+        color: $svg-color
+        transition: color .5s ease
         .icon
             display: block
             // max-width: 100%

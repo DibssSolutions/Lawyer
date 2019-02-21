@@ -2,13 +2,32 @@ body
 	background: #FFF
 	line-height: 1.4
 	font-size: 16px
-	a
-		text-decoration: none
-
-.title-lg
-	font-size: 60px
-	letter-spacing: .2px
+	font-weight: 400
+	color: $dark
+	+manrope
+a
+	text-decoration: none
+	color: $dark
+	transition: color .3s
+	+hover
+		color: $main
+.title
+	font-size: 30px
 	font-weight: 300
+	margin-bottom: 26px
+	text-align: center
+	&-xl
+		font-size: 60px
+		letter-spacing: .2px
+		font-weight: 300
+	&-lg
+		font-size: 36px
+		font-weight: 300
+		line-height: 1.4
+	&-sm
+		font-size: 24px
+		font-weight: 300
+		line-height: 1.5
 
 
 .btn
@@ -21,18 +40,30 @@ body
 	overflow: hidden
 	font-size: 14px
 	transition: background-color .3s ease, color .3s ease
+	&_lg
+		height: 70px
 	&_white
 		color: $white
 	&_outline
 		background-color: transparent
 		border: 1px solid $btn-border
+		letter-spacing: 1.21px
 		+hover
 			background-color: $white
 			color: $dark
 			.btn__icon
 				transform: translateX(5px)
-			.btn__icon_green
 				color: $dark
+			// .btn__icon_green
+			// 	color: $dark
+	&_w100
+		width: 100%
+	&_green
+		background-color: $main
+	&_transf
+		transition: transform .3s ease
+		+hover
+			transform: translateY(2px)
 	&__icon
 		font-size: 7px
 		margin-left: 20px
@@ -43,3 +74,56 @@ body
 		&_green
 			color: $main
 
+.divider
+	width: 37px
+	height: 1px
+	background-color: $main
+	margin: 25px 0
+.divider-lg
+	width: 56px
+	height: 2px
+	background-color: $main
+	margin: 40px 0
+
+.checkbox 
+	position: relative
+	cursor: pointer
+	display: -ms-flexbox
+	display: flex
+	-ms-flex-align: center
+	align-items: center
+	&__input
+		display: none
+	&__icon
+		position: relative
+		min-width: 30px
+		width: 30px
+		height: 30px
+		border-radius: 0
+		border: none
+		background-color: $block-bg
+		// transition: all .5s ease
+		margin-right: 18px
+		+hover
+			&:before
+				transform: scale(.5) rotate(45deg) translate(-1px,-1px)
+		&:before
+			content: ''
+			position: absolute
+			transition: transform .4s cubic-bezier(.45,1.8,.5,.75)
+			transform: scale(0) rotate(45deg) translate(-1px,-1px)
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			z-index: 1
+			border-right: 1px solid $main
+			border-bottom: 1px solid $main
+			height: 10px
+			width: 8px
+			.checkbox__input:checked &
+				transform: scale(1) rotate(45deg) translate(-1px,-1px)
+
+.checkbox__input:checked + .checkbox__icon:before
+	transform: scale(1) rotate(45deg) translate(-1px,-1px)

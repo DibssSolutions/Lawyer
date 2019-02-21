@@ -1,5 +1,7 @@
 .cards
     padding-bottom: 100px
+    +sm
+        padding-bottom: 70px
     &__content
         display: flex
         flex-wrap: wrap
@@ -11,6 +13,21 @@
         width: 100%
         padding-right: 15px
         padding-left: 15px
+        +lg
+            flex: 0 0 50%
+            max-width: 50%
+        +sm
+            flex: 0 0 100%
+            max-width: 100%
+        &:not(:first-child)
+            margin-top: 1.5rem
+        &_order
+            +lg
+                order: 10
+                margin-top: 1.5rem
+                flex: 0 0 100%
+                max-width: 100%
+
         &-wrap
             display: flex
             flex-wrap: wrap
@@ -25,8 +42,21 @@
             flex: 0 0 100%
             max-width: 100%
             height: calc(50% - 12px)
+            +lg
+                flex: 0 0 50%
+                max-width: 50%
+                height: 100%
+            +sm
+                flex: 0 0 100%
+                max-width: 100%
+                height: auto
+
             &:not(:first-child)
                 margin-top: 24px
+                +lg
+                    margin-top: 0
+                +sm
+                    margin-top: 1.5rem
 
     
 .cards-item
@@ -34,6 +64,10 @@
     display: block
     background-color: $card-bg
     height: 100%
+    +lg
+        padding: 50px
+    +md
+        padding: 35px 30px
     &_image
         color: $white
         background-size: cover
@@ -41,6 +75,8 @@
         position: relative
         z-index: 1
         padding: 65px 55px
+        +lg
+            padding: 65px 55px
     &__header
         margin-bottom: 20px
         &_mb
@@ -81,6 +117,7 @@
         font-style: normal
         font-size: 14px
         line-height: 1.7
+        white-space: nowrap
 
 .article-cart
     &__text

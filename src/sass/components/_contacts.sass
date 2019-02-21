@@ -1,0 +1,43 @@
+.section-contacts
+    position: relative
+    // padding-left: 100px
+    &__map
+        width: 100%
+        height: 658px
+        +sm
+            height: 450px
+    &__info
+        position: absolute
+        top: 0
+        left: 0
+        min-width: 30%
+        +sm
+            position: relative
+            min-width: auto
+            width: 100%
+.contacts-info
+    padding: 100px
+    background-color: #29292a
+    color: $white
+    z-index: 10
+    +md
+        padding: 50px 30px
+    &__title
+        margin-bottom: 1rem
+    address
+        font-style: normal
+    &__phone
+        margin-top: 1rem
+        a
+            color: $main
+            font-size: 24px
+            font-weight: 300
+            +hover
+                color: darken($main,10%)
+    &__email
+        margin-top: 0.5rem
+        a
+            color: $white
+            +hover
+                color: $white
+        

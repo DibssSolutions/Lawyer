@@ -1,6 +1,7 @@
 .burger
     position: relative
-    width: 100%
+    // width: 100%
+    width: 100px
     height: 100px
     background-color: rgba($burger-bg, .7)
     border: none
@@ -12,9 +13,12 @@
     +hover
         .burger__line
             width: 100%
+    +sm
+        width: 80px
+        height: 80px
     .header.is-active &
-        width: 100px
-        height: 100%
+        // width: 100px
+        // height: 100%
     &__icon
         display: block
         width: 27px
@@ -54,28 +58,34 @@
 
 .burger-menu
     position: fixed
-    left: 100px
+    // left: 100px
+    left: 0
     top: 0
-    bottom: 0
+    height: 100vh
     width: 320px
     background-color: $menu-bg
     border-left: 1px solid $border
     transition: transform .3s ease, opacity .3s ease
     transform: translateX(-100%)
     opacity: 0
+    .header.is-active &
+        left: 0
     &.is-open
         transform: translateX(0)
         opacity: 1
     &__inner
         position: relative
-        overflow-y: auto
         width: 100%
         height: 100%
-        padding: 30px
+        padding: 130px 30px 30px
         display: flex
         align-items: center
         justify-content: flex-start
+        +sm
+            padding-top: 110px
     &__content
+        overflow-y: auto
+        max-height: 100%
     &__list
     &__item
         position: relative

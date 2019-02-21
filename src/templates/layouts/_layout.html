@@ -8,19 +8,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="theme-color" content="#fff">
     <meta name="format-detection" content="telephone=no">
+    
     <link rel="stylesheet" media="all" href="css/app.css">
     {# {% include "../partials/_media-tags.html" %} #}
   </head>
   <body>
 
     <!-- BEGIN content -->
-    <div class="out">
+    <div class="out" data-aos-duration="600" data-aos-delay="100">
       {% block content %}{% endblock %}
     </div>
     <!-- END content -->
 
     {% include "../partials/_modals.html" %}
     <!-- BEGIN scripts -->
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=7a9648bf-398b-4673-ad66-512ef28875ce&lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <!-- END scripts -->
 

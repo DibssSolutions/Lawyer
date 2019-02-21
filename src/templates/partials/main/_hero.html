@@ -1,13 +1,13 @@
 <section class="hero" style="background-image: url('img/hero_bg.jpg');">
     <div class="hero__inner inner">
         <div class="hero__content">
-            <div class="hero__contacts">
+            {# <div class="hero__contacts">
                 <a href="tel:+79104449659" class="hero__link">
                     <span class="hero__link-icon">{{ mixins.icon('phone') }}</span>
                     <span class="hero__link-text">+7 910 444 96 59</span>
                 </a>
-            </div>
-            <div class="hero__left" data-aos="fade-up" data-aos-anchor=".section_intro" data-aos-delay="600">
+            </div> #}
+            <div class="hero__left" data-aos="fade-up" data-aos-anchor=".hero" data-aos-delay="600">
                 <h4 class="hero__subtitle">адвокатская контора</h4>
                 <h1 class="hero__title title-xl">Кремер Юлии Дмитриевны</h1>
                 <div class="hero__text">более 20 лет опыта и 1000 выигранных дел</div>
@@ -18,7 +18,7 @@
                     </a>
                 </div>
             </div>
-            <div class="hero__right">
+            <div class="hero__right" data-aos="fade-left" data-aos-delay="300">
                 <div class="hero__menu hero-menu">
                     {% for item in [
                         'Арбитражные<br>дела',

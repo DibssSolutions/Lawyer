@@ -8,7 +8,6 @@ import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
     control = $(control);
     const modal = modals.filter(`[data-modal="${control.data('modal-control')}"]`);
     
-    console.log(modal);
     control.on('click', e => {
       e.preventDefault();
       modals.removeClass(OPEN);

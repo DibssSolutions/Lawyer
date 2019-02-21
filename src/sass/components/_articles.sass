@@ -13,6 +13,14 @@
         padding-right: 15px
         padding-left: 15px
         margin-bottom: 90px
+        +md
+            flex: 0 0 50%
+            max-width: 50%
+        +sm
+            flex: 0 0 100%
+            max-width: 100%
+
+
 
 .article-card
     display: block
@@ -27,6 +35,8 @@
         display: block
         height: 208px
         overflow: hidden
+        +sm
+            max-height: 185px
         +hover
             img
                 transform: scale(1)

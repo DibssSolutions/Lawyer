@@ -1,4 +1,4 @@
-<header class="header js-header">
+<header class="header js-header" data-aos="fade-right" data-aos-delay="300">
     <button class="burger js-burger" type="button">
         <span class="burger__icon">
             <span class="burger__line burger__line_md"></span>
@@ -6,11 +6,11 @@
             <span class="burger__line burger__line_sm"></span>
         </span>
     </button>
-    <div class="burger-menu">
+    <div class="burger-menu js-burger-menu">
         <div class="burger-menu__inner">
             <div class="burger-menu__content">
                 <ul class="burger-menu__list">
-                    <li class="burger-menu__item">
+                    <li class="burger-menu__item is-active">
                         <a href="№" class="burger-menu__link">Главная</a>
                     </li>
                     <li class="burger-menu__item">
@@ -32,9 +32,12 @@
             </div>
         </div>
     </div>
-    <div class="header__wrap">
+    <div class="header__wrap" data-aos="fade-down" data-aos-delay="600">
         <div class="header__contacts">
-            <a href="tel:+79104449659" class="phone">+7 910 444 96 59</a>
+            <a href="tel:+79104449659" class="header__link">
+                <span class="header__link-icon">{{ mixins.icon('phone') }}</span>
+                <span class="header__link-text">+7 910 444 96 59</span>
+            </a>
             <a href="mailto:test@mail.com" class="email">test@mail.com</a>
         </div>
     </div>

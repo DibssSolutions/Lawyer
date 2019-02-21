@@ -2,6 +2,10 @@
     padding-bottom: 120px
     background-color: $gray-bg
     overflow: hidden
+    +lg
+        padding-bottom: 60px
+    +sm
+        padding-bottom: 40px
     &__wrap
         display: flex
         flex-wrap: wrap
@@ -9,6 +13,13 @@
         padding-top: 120px
         flex: 0 0 58.33333%
         max-width: 58.33333%
+        +lg
+            padding-top: 60px
+        +md
+            flex: 0 0 100%
+            max-width: 100%
+        +sm
+            padding-top: 40px
     &__right
         position: relative
         padding-top: 120px
@@ -16,6 +27,22 @@
         flex: 0 0 41.66667%
         max-width: 41.66667%
         z-index: 1
+        +lg
+            padding-top: 60px
+            padding-left: 50px
+        +md
+            flex: 0 0 100%
+            max-width: 100%
+            padding: 60px
+            padding-bottom: 0
+            background-color: $white
+            margin-top: 30px
+        +sm
+            padding: 40px
+            padding-bottom: 0
+        +xs
+            padding: 30px
+            padding-bottom: 0
         &:after
             content: ''
             position: absolute
@@ -25,6 +52,13 @@
             bottom: -120px
             width: 50vw
             background-color: $white
+            +lg
+                bottom: -60px
+            +md
+                right: 0
+                width: auto
+            +sm
+                bottom: -40px
     &__title
         margin-bottom: 32px
         span
@@ -43,6 +77,9 @@
             color: rgba($white,.5)
         .arrow-more__icon-inner
             max-width: 70px
+    +sm
+        height: 305px
+        padding: 30px 40px
     &:not(:first-child)
         margin-top: 30px
     &__name

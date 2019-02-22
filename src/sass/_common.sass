@@ -153,6 +153,8 @@ a
 			width: 8px
 			.checkbox__input:checked &
 				transform: scale(1) rotate(45deg) translate(-1px,-1px)
+		&_white
+			background-color: $white
 
 .checkbox__input:checked + .checkbox__icon:before
 	transform: scale(1) rotate(45deg) translate(-1px,-1px)
@@ -163,8 +165,14 @@ a
 	display: flex
 	align-items: center
 	margin-bottom: 55px
+	flex-wrap: wrap
 	&__item
 		position: relative
+		font-size: 14px
+		+sm
+			white-space: nowrap
+			font-size: 12px
+
 		&:not(:first-child)
 			&:before
 				content: ""
@@ -183,3 +191,6 @@ a
 				color: $white
 		span
 			color: $white
+
+.align-right
+	margin-left: auto

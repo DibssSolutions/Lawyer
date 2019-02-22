@@ -1,0 +1,95 @@
+<section class="services">
+    <div class="services__inner inner">
+        <div class="services__controls services-controls">
+            <div class="services-controls__row row">
+                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
+                    <a href="/services-individual" class="services-controls__item is-active">
+                            <span class="services-controls__name">
+                                <span>Арбитражные <br>дела</span>
+                            </span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
+                    <a href="/services" class="services-controls__item">
+                        <span class="services-controls__name">
+                            <span>Уголовные<br>дела</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
+                    <a href="/services" class="services-controls__item">
+                        <span class="services-controls__name">
+                            <span>Гражданские<br>дела</span>
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="services__list row">
+            {% for item in [
+                {
+                    text: 'Сопровождение бракоразводного процесса и раздела имущества',
+                    img: 'service1.jpg'
+                },
+                {
+                    text: 'Помощь в наследственных делах'
+                },
+                {
+                    text: 'Консультации и помощь по завещанию'
+                },
+                {
+                    text: 'Споры с застройщиками'
+                },
+                {
+                    text: 'Взыскание долгов с физических лиц'
+                },
+                {
+                    text: 'Правовой анализ документов'
+                },
+                {
+                    text: 'Адвокат по недвижимости',
+                    img: 'service1.jpg'
+                }
+            ] %}
+                <div class="{% if item.img %}col-8 col-lg-12{% else %} col-4 col-lg-6 col-sm-12{% endif %}">
+                    <{% if item.img %}a href="#"{% else %}div{% endif %} class="{% if item.img %}services-item-big{% else %}services-item{% endif %}">
+                        {% if item.img %}
+                            <span class="row">
+                                <span class="col-6 col-sm-7 col-xs-12">
+                                    <span class="services-item">
+                                        <span class="span services-item__name">
+                                            {{ item.text }}
+                                        </span>
+                                        <span class="services-item__continue">
+                                            <span class="services-item__more">
+                                                <span class="arrow-more">
+                                                    <span class="arrow-more__text">Подробнее</span>
+                                                    <span class="arrow-more__icon">
+                                                        <span class="arrow-more__icon-inner">
+                                                            <span class="arrow-more__icon-wrap">
+                                                                {{ mixins.icon('arrow-long') }}
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span class="col-6 col-sm-5 col-xs-12">
+                                    <span class="services-item-big__img">
+                                        <img src="./img/{{ item.img }}" alt="img">
+                                    </span>
+                                </span>
+                            </span>
+                        {% else %}
+                            <span class="services-item__name">
+                                {{ item.text }}
+                            </span>
+                        {% endif %}
+                    </{% if item.img %}a{% else %}div{% endif %}>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

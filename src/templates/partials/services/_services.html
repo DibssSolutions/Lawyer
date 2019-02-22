@@ -2,17 +2,49 @@
     <div class="services__inner inner">
         <div class="services__controls services-controls">
             <div class="services-controls__row row">
-                <div class="col-md-6 col-lg-4">
-                    <a href="#" class="services-controls__item">
-                        <span>Физическим<br>лицам</span>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
+                    <a href="/services-individual" class="services-controls__item">
+                            <span class="services-controls__name">
+                                <span>Арбитражные <br>дела</span>
+                            </span>
                     </a>
                 </div>
-                <div class="col-md-6 col-lg-4">
-                    <a href="#" class="services-controls__item">
-                        <span>Юридическим<br>лицам</span>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
+                    <a href="/services" class="services-controls__item is-active">
+                        <span class="services-controls__name">
+                            <span>Уголовные<br>дела</span>
+                        </span>
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
+                    <a href="/services" class="services-controls__item">
+                        <span class="services-controls__name">
+                            <span>Гражданские<br>дела</span>
+                        </span>
                     </a>
                 </div>
             </div>
+        </div>
+        <div class="services__list row">
+            {% for item in [
+                'Защита при проверках ОБЭП (УЭБиПк)',
+                'Обжалование решений  налоговых органов',
+                'Представительство в арбитражном суде',
+                'Защита деловой репутации',
+                'Взыскание долгов с юридических лиц',
+                'Исполнительное производство',
+                'Обжалование решений Федеральной антимонопольной службы (ФАС)',
+                'Обжалование решений таможенных органов',
+                'Проверка юридической чистоты сделки'
+            ] %}
+                <div class="col-4 col-lg-6 col-sm-12">
+                    <div class="services-item">
+                        <span class="services-item__name">
+                            {{ item }}
+                        </span>
+                    </div>
+                </div>
+            {% endfor %}
         </div>
     </div>
 </section>

@@ -40,4 +40,58 @@
             color: $white
             +hover
                 color: $white
-        
+
+.contacts
+    padding-top: 150px
+    background-color: #202020
+    +sm
+        padding-top: 110px
+    &__row
+        align-items: flex-end
+    .divider
+        margin: 0 0 40px
+    &__content
+        color: $white
+    address
+        font-style: normal
+        margin-bottom: 1rem
+        color: #9a9999
+    &__phone
+        display: block
+        font-size: 24px
+        letter-spacing: 0.6px
+        line-height: 1.167
+        color: $main
+        white-space: nowrap
+        &-white
+            white-space: nowrap
+            color: $white
+            +hover
+                color: $white
+    &__email
+        display: block
+        color: #999
+        font-size: 14px
+        margin-top: 1rem
+        +hover
+            color: #999
+    &__divider
+        width: 100%
+        height: 1px
+        background-color: #272626
+        margin: 40px 0
+    &__small
+        font-size: 14px
+        line-height: 2rem
+        margin-bottom: 3rem
+    &__link
+        color: $main
+        border-bottom: 1px solid
+        +hover
+            color: darken($main,10%)
+    &__map
+        width: 100%
+        height: 400px
+        +sm
+            // height: 450px
+

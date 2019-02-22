@@ -1,0 +1,38 @@
+<section class="contacts">
+    <div class="contacts__inner inner">
+        {{ mixins.breadcrumbs({
+            list: [
+                'Главная',
+                'Контакты'
+            ]
+        })}}
+        <div class="contacts__content">
+            <div class="contacts__row row">
+                <div class="col-5 col-md-12">
+                    <div class="divider"></div>
+                    <address>
+                        г. Москва, м. Красные ворота<br>
+                        ул. Садовая-Спасская дом 21/1<br>
+                        офис 321
+                    </address>
+                </div>
+                <div class="col-7 col-md-12 align-right">
+                    {# <div class="row"> #}
+                        {# <div class="col-7 col-sm-12"> #}
+                            <a href="tel:+79104449659" class="contacts__phone">+7 910 444 96 59</a>
+                        {# </div> #}
+                        {# <div class="col-5 col-sm-12"> #}
+                            <a href="" class="contacts__email">moskremer@yandex.ru</a>
+                        {# </div> #}
+                    {# </div> #}
+                </div>
+            </div>
+            <div class="contacts__divider"></div>
+            <div class="contacts__small">
+                Лучший способ связаться — это <a href="#" class="contacts__link">оставить заявку</a> или позвонить по номеру <a href="tel:+79104449659" class="contacts__phone-white">+7 910 444 96 59</a>
+            </div>
+            
+            <div class="contacts__map map" id="map"></div>
+        </div>
+    </div>
+</section>

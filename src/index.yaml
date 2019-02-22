@@ -5,3 +5,7 @@ PageList:
   ready: 50
 - file: services.html
   ready: 50
+- file: services-individual.html
+  ready: 50
+- file: contacts.html
+  ready: 50

@@ -1,0 +1,54 @@
+<section class="hero" style="background-image: url('img/hero_bg.jpg');">
+    <div class="hero__inner inner">
+        <div class="hero__row row">
+            {# <div class="hero__contacts">
+                <a href="tel:+79104449659" class="hero__link">
+                    <span class="hero__link-icon">{{ mixins.icon('phone') }}</span>
+                    <span class="hero__link-text">+7 910 444 96 59</span>
+                </a>
+            </div> #}
+            <div class="col-8 col-lg-7 col-md-12" data-aos="fade-up" data-aos-anchor=".hero" data-aos-delay="600">
+                <h4 class="hero__subtitle">АДВОКАТСКАЯ КОНТОРА<br>КРЕМЕР ЮЛИИ ДМИТРИЕВНЫ</h4>
+                <h1 class="hero__title title-big">Квалифицированная помощь в любых вопросах по расторжению брака и разделу имущества</h1>
+                <ul class="hero__list hero-list">
+                    {% for item in [
+                        'Бракоразводный процесс на любой стадии',
+                        'Полностью погрузимся в решение Ваших вопросов',
+                        'Оценим возможные риски',
+                        'Разработаем стратегию ведение дела',
+                        'Оформим документы',
+                        'Гарантируем конфиденциальность',
+                        'Без Вашего участия и согласия супруга'
+                    ] %}
+                        <li class="hero-list__item">{{ item }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="col-4 col-lg-5 col-md-12" data-aos="fade-left" data-aos-anchor=".hero" data-aos-delay="600">
+                <div class="hero__form">
+                    <h5 class="hero__form-title">Закажите консультацию адвоката. Она бесплатная и ни к чему Вас не обязывает.</h5>
+                    <form action="" class="form">
+                        <div class="form-group">
+                            <input type="tel" class="form-input form-input_white" placeholder="Введите телефон">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn_white btn_green btn_lg btn_w100 btn_transf">
+                                Отправить заявку
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <div class="politic-desclamer">
+                                <label class="checkbox js-checkbox">
+                                    <input class="checkbox__input" type="checkbox" checked name="politic">
+                                    <div class="checkbox__icon checkbox__icon_white"></div>
+                                    <div class="checkbox__label">Нажимая на кнопку, Вы соглашаетесь на обработку <a href="#" target="_blank">персональных данных</a></div>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

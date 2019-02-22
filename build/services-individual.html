@@ -39,10 +39,10 @@
                   <a href="/services-individual" class="burger-menu__link">Физическим лицам</a>
                 </li>
                 <li class="burger-menu__item">
-                  <a href="/articles.html" class="burger-menu__link">Статьи</a>
+                  <<<<<<< HEAD <a href="/articles.html" class="burger-menu__link">Статьи</a> ======= <a href="/articles" class="burger-menu__link">Статьи</a> >>>>>>> 577414771e2e729075ae3b5ac3aca67b98a083f0
                 </li>
                 <li class="burger-menu__item">
-                  <a href="#" class="burger-menu__link">Контакты</a>
+                  <a href="/contacts" class="burger-menu__link">Контакты</a>
                 </li>
               </ul>
             </div>
@@ -239,7 +239,7 @@
                   <div class="footer__worktime">ПН-ВС 8:00 — 22:00 </div>
                 </div>
                 <div class="footer__col footer__col_order footer__col_xl">
-                  <button type="button" class="btn btn_white btn_green btn_w100 btn_transf">Заказать звонок</button>
+                  <button type="button" class="btn btn_white btn_green btn_w100 btn_transf" data-modal-control="feedback-form">Заказать звонок</button>
                 </div>
               </div>
             </div>
@@ -281,6 +281,40 @@
               <p> Юлия Дмитриевна, вы просто спасли меня и моего сына! </p>
               <p> Бывший муж не хотел отпускать меня и супруга, но и жить с ним дальше было невозможно. Я не хотела бы описывать всю ситуацию, вспоминаю те дни с огромной горечью… Главное, что кошмар окончен! Юлия Дмитриевна в считанные дни нашла способы обезопасить нас от мужа и помогла сохранить имущество, принадлежавшее мне до замужества. </p>
               <p> Девушки, если у вас сложная ситуация в семье, вы на грани и думаете, что это конец — не медлите, обратитесь к Юлии Дмитриевне! </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal" data-modal="feedback-form">
+      <div class="modal__container modal__container_sm" data-modal-container>
+        <div class="modal__inner">
+          <button class="modal__close" data-modal-close>
+            <svg class="icon icon-close">
+              <use xlink:href="img/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <div class="form-modal">
+            <div class="form-modal__head">Заказать звонок</div>
+            <div class="form-modal__title"> Оставьте контакты, менеджер<br> перезвонит в ближайшее время </div>
+            <div class="form-modal__form">
+              <form action="" class="form">
+                <div class="form-group">
+                  <input type="tel" class="form-input" placeholder="Введите телефон">
+                </div>
+                <div class="form-group">
+                  <button class="btn btn_white btn_green btn_lg btn_w100 btn_transf"> Заказать звонок </button>
+                </div>
+                <div class="form-group">
+                  <div class="politic-desclamer">
+                    <label class="checkbox js-checkbox">
+                      <input class="checkbox__input" type="checkbox" checked name="politic">
+                      <div class="checkbox__icon"></div>
+                      <div class="checkbox__label">Нажимая на кнопку, Вы соглашаетесь на обработку <a href="#" target="_blank">персональных данных</a></div>
+                    </label>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>

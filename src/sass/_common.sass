@@ -153,6 +153,8 @@ a
 			width: 8px
 			.checkbox__input:checked &
 				transform: scale(1) rotate(45deg) translate(-1px,-1px)
+		&_white
+			background-color: $white
 
 .checkbox__input:checked + .checkbox__icon:before
 	transform: scale(1) rotate(45deg) translate(-1px,-1px)
@@ -163,8 +165,18 @@ a
 	display: flex
 	align-items: center
 	margin-bottom: 55px
+	flex-wrap: nowrap
 	&__item
 		position: relative
+		font-size: 14px
+		+sm
+			white-space: nowrap
+			font-size: 12px
+			// &:nth-child(2):not(:last-child)
+			display: none
+			&:first-child,
+			&:last-child
+				display: block
 		&:not(:first-child)
 			&:before
 				content: ""
@@ -174,7 +186,10 @@ a
 				background-color: rgba($white,.3)
 				margin: 0 10px
 				vertical-align: middle
+				+md 
+					width: 15px
 		&:last-child
+			+text-overflow
 			&:before
 				background-color: $main
 		a
@@ -184,17 +199,50 @@ a
 		span
 			color: $white
 
+.align-right
+	margin-left: auto
 .date
-    color: rgba($white, 0.2)
-    font-size: 12px
-    line-height: 1.667
-    text-transform: uppercase
-    letter-spacing: 0.216em
+	color: rgba($white, 0.2)
+	font-size: 12px
+	line-height: 1.667
+	text-transform: uppercase
+	letter-spacing: 0.216em
 
 .share
-    display: flex
-    align-items: center
-    &__text
-        font-size: 14px
-        margin-right: 15px
-        vertical-align: top
+	display: flex
+	align-items: center
+	&__text
+		font-size: 14px
+		margin-right: 15px
+		vertical-align: top
+
+.pagination
+	text-align: center
+	&__item
+		display: inline-block
+		position: relative
+		min-width: 10px
+		padding-top: 12px
+		font-size: 14px
+		color: #666565
+		&:not(:last-child)
+			margin-right: 20px
+		&:before
+			content: ""
+			position: absolute
+			top: 0
+			left: 50%
+			transform: translateX(-50%)
+			display: inline-block
+			width: 6px
+			height: 6px
+			background-color: #666565
+			border-radius: 50%
+		&.is-active
+			color: $main
+			&:before
+				background-color: $main
+		+hover
+			color: $main
+			&:before
+				background-color: $main

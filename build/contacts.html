@@ -63,92 +63,67 @@
         </div>
       </header>
       <div class="main">
-        <section class="hero-sm" style="background-image: url('img/bg-3.jpg');">
-          <div class="hero-sm__inner inner">
+        <section class="contacts">
+          <div class="contacts__inner inner">
             <!-- begin breadcrumbs -->
             <ul class="breadcrumbs">
               <li class="breadcrumbs__item">
                 <a href="#">Главная</a>
               </li>
               <li class="breadcrumbs__item">
-                <span>Услуги юридическим лицам</span>
+                <span>Контакты</span>
               </li>
             </ul>
             <!-- end breadcrumbs -->
-            <h1 class="hero-sm__title title-lg"> Наши услуги </h1>
+            <div class="contacts__content">
+              <div class="contacts__row row">
+                <div class="col-5 col-md-12">
+                  <div class="divider"></div>
+                  <address> г. Москва, м. Красные ворота<br> ул. Садовая-Спасская дом 21/1<br> офис 321 </address>
+                </div>
+                <div class="col-7 col-md-12 align-right">
+                  <a href="tel:+79104449659" class="contacts__phone">+7 910 444 96 59</a>
+                  <a href="" class="contacts__email">moskremer@yandex.ru</a>
+                </div>
+              </div>
+              <div class="contacts__divider"></div>
+              <div class="contacts__small"> Лучший способ связаться — это <a href="#" class="contacts__link">оставить заявку</a> или позвонить по номеру <a href="tel:+79104449659" class="contacts__phone-white">+7 910 444 96 59</a>
+              </div>
+              <div class="contacts__map map" id="map"></div>
+            </div>
           </div>
         </section>
-        <section class="services">
-          <div class="services__inner inner">
-            <div class="services__controls services-controls">
-              <div class="services-controls__row row">
-                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
-                  <a href="/services-individual" class="services-controls__item">
-                    <span class="services-controls__name">
-                      <span>Арбитражные <br>дела</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
-                  <a href="/services" class="services-controls__item is-active">
-                    <span class="services-controls__name">
-                      <span>Уголовные<br>дела</span>
-                    </span>
-                  </a>
-                </div>
-                <div class="col-sm-12 col-md-6 col-lg-4 col-3">
-                  <a href="/services" class="services-controls__item">
-                    <span class="services-controls__name">
-                      <span>Гражданские<br>дела</span>
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="services__list row">
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Защита при проверках ОБЭП (УЭБиПк) </span>
+        <section class="contacts-feedback">
+          <div class="contacts-feedback__inner inner">
+            <div class="contacts-feedback__row row">
+              <div class="col-6 col-md-12">
+                <div class="contacts-feedback__form">
+                  <form action="" class="form">
+                    <h2 class="form__title title-lg"> Оставьте заявку для обратной связи </h2>
+                    <div class="divider-lg"></div>
+                    <div class="form-group">
+                      <input type="tel" class="form-input form-input_white" placeholder="Ваше имя">
+                    </div>
+                    <div class="form-group">
+                      <input type="tel" class="form-input form-input_white" placeholder="Введите телефон">
+                    </div>
+                    <div class="form-group">
+                      <button class="btn btn_white btn_green btn_lg btn_w100 btn_transf"> Отправить заявку </button>
+                    </div>
+                    <div class="form-group">
+                      <div class="politic-desclamer">
+                        <label class="checkbox js-checkbox">
+                          <input class="checkbox__input" type="checkbox" checked name="politic">
+                          <div class="checkbox__icon checkbox__icon_white"></div>
+                          <div class="checkbox__label">Нажимая на кнопку, Вы соглашаетесь на обработку <a href="#" target="_blank">персональных данных</a></div>
+                        </label>
+                      </div>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Обжалование решений налоговых органов </span>
-                </div>
-              </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Представительство в арбитражном суде </span>
-                </div>
-              </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Защита деловой репутации </span>
-                </div>
-              </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Взыскание долгов с юридических лиц </span>
-                </div>
-              </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Исполнительное производство </span>
-                </div>
-              </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Обжалование решений Федеральной антимонопольной службы (ФАС) </span>
-                </div>
-              </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Обжалование решений таможенных органов </span>
-                </div>
-              </div>
-              <div class="col-4 col-lg-6 col-sm-12">
-                <div class="services-item">
-                  <span class="services-item__name"> Проверка юридической чистоты сделки </span>
+              <div class="col-6 col-md-12">
+                <div class="contacts-feedback__img" style="background-image: url('./img/nc.jpg');">
                 </div>
               </div>
             </div>

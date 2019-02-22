@@ -98,3 +98,27 @@
         .arrow-more__text,
         .arrow-more__icon
             color: rgba($white,.3)
+
+.contacts-feedback
+    padding-top: 100px
+    &__row
+        margin: 0
+        +md
+            flex-direction: column-reverse
+    [class*='col']
+        padding: 0
+    &__form
+        padding: 70px
+        background-color: $block-bg
+        +lg
+            padding: 50px
+        +md
+            padding: 40px
+        +xs
+            padding: 30px
+    &__img
+        width: 100%
+        height: 100%
+        background-position: center
+        background-size: cover
+        background-repeat: no-repeat

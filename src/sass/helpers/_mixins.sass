@@ -297,7 +297,7 @@
   width: $size + px
   border-radius: 50%
 
-=generate_grid($columns: 12, $sizeXs: true, $sizeSm: true, $sizeMd: true, $sizeLg: true, $padding: 15px)
+=generate_grid($columns: 12, $sizeXs: true, $sizeSm: true, $sizeMd: true, $sizeLg: true, $sizeXl: true, $padding: 15px)
   .row
     margin: 0px -#{$padding}
     display: flex
@@ -309,6 +309,11 @@
     .col-#{$i}
       flex: 0 0 $width
       min-width: $width
+    @if($sizeXl)
+      .col-xl-#{$i}
+        +r(1590)
+          flex: 0 0 $width
+          min-width: $width
     @if($sizeLg)
       .col-lg-#{$i}
         +r(1259)
@@ -326,7 +331,7 @@
           min-width: $width
     @if($sizeXs)
       .col-xs-#{$i}
-        +r(550)
+        +r(599)
           flex: 0 0 $width
           min-width: $width
 

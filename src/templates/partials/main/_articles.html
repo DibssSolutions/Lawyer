@@ -44,32 +44,7 @@
             ] %}
                 
                 <div class="section-articles__col">
-                    <a href="#" class="article-card">
-                        <span class="article-card__img">
-                            <img src="./img/{{ item.img }}" alt="article image">
-                        </span>
-                        <span class="article-card__date">
-                            {{ item.date }}
-                        </span>
-                        <span class="article-card__title title-sm">
-                            {{ item.title }}
-                        </span>
-                        <span class="article-card__text">
-                            {{ item.text }}
-                        </span>
-                        <span class="article-card__more">
-                            <span class="arrow-more">
-                                <span class="arrow-more__text">Читать далее</span>
-                                <span class="arrow-more__icon">
-                                    <span class="arrow-more__icon-inner">
-                                        <span class="arrow-more__icon-wrap">
-                                            {{ mixins.icon('arrow-long') }}
-                                        </span>
-                                    </span>
-                                </span>
-                            </span>
-                        </span>
-                    </a>
+                    {{ mixins.articleCard(item) }}
                 </div>
 
             {% endfor %}

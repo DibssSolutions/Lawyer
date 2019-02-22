@@ -1,0 +1,34 @@
+<section class="section-articles">
+        <div class="section-articles__inner inner">
+            <h2 class="section-articles__title title">
+                Интересные статьи
+            </h2>
+            <div class="section-articles__wrap">
+                {% for item in [
+                    {
+                        img: 'article1.jpg',
+                        date: '17 ДЕКАБРЯ 2018',
+                        title: 'Споры арендаторов и арендодателей',
+                        text: 'Главной причиной всех конфликтов между собственниками и арендаторами является плохо'
+                    },
+                    {
+                        img: 'article2.jpg',
+                        date: '15 ДЕКАБРЯ 2018',
+                        title: 'Подлежат ли разделу денежные средства на счете',
+                        text: 'Согласно закону, разделу подлежит не только движимое и недвижимое имущество, но и'
+                    },
+                    {
+                        img: 'article3.jpg',
+                        date: '15 ДЕКАБРЯ 2018',
+                        title: 'Как делить кредиты и долги после развода',
+                        text: 'Согласно закону не только имущество, которое было приобретено в браке, подлежит разделу'
+                    }
+                ] %}
+                    <div class="section-articles__col">
+                        {{ mixins.articleCard(item) }}
+                    </div>
+    
+                {% endfor %}
+            </div>
+        </div>
+    </section>

@@ -1,0 +1,15 @@
+---
+title: Articles
+---
+{% extends "layouts/_layout.html" %}
+
+{% block content %}
+	
+	{% include "./partials/_header.html" %}
+	<div class="main">
+        {% include "./partials/articles/_hero.html" %}
+        {% include "./partials/articles/_articles-list.html" %}
+	</div>
+    {% include "./partials/_footer.html" %}
+
+{% endblock %}

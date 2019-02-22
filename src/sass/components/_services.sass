@@ -1,0 +1,26 @@
+.services
+    padding: 100px 0 70px
+    position: relative
+    z-index: 5
+
+.services-controls
+    margin-top: -180px
+    &__row
+        justify-content: flex-end
+    &__item
+        padding: 50px
+        display: flex
+        align-items: center
+        color: $white
+        background-color: #222
+        transition: background-color .3s ease
+        +hover
+            background-color: $main
+            color: $white
+            border-color: $white
+        span
+            display: inline
+            border-bottom: 1px solid transparent
+            +hover
+                border-color: $white
+            

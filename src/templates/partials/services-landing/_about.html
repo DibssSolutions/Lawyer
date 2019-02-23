@@ -1,0 +1,77 @@
+<section class="about" id="about">
+    <div class="about__inner inner" data-aos="fade-up">
+        <h2 class="about__title title">
+            Слово ведущего адвоката
+        </h2>
+        <div class="about__wrap">
+            <div class="about__content">
+                <div class="about__left">
+                    <div class="about__img">
+                        <img src="./img/founder.png" alt="founder">
+                    </div>
+                </div>
+                <div class="about__right">
+                    <div class="about__text">
+                        <p>
+                            Я, Кремер Юлия Дмитриевна, адвокат Московской палаты Московской области, реестровый № 50/4162. 
+                            Специализируюсь в вопросах расторжения брака и раздела имущества более 20 лет.
+                        </p>
+                        <p>
+                            За это время я сталкивались с самыми неоднозначными ситуациями: похищением детей одним из родителей, 
+                            кражей денежных средств со счетов и банковских ячеек, предоставлением подложных расписок о заимствовании 
+                            денежных средств одним из супругов. К сожалению, это далеко не все ситуации, с которыми мне приходилось 
+                            иметь дело за время адвокатской практики.
+                        </p>
+                        <div class="divider"></div>
+                        <p>
+                            Решение таких дел позволило обрести широкий опыт, и теперь я могу с уверенность заявить: ситуация, которую 
+                            вам необходимо решить, уже была в моей практике.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row digits">
+            {% for item in [
+                {
+                    small: 'лет',
+                    val: '20',
+                    text: 'разностороннего опыта'
+                },
+                {
+                    small: 'Более',
+                    val: '1.000',
+                    text: 'выигранных дел',
+                    reverse: true
+                },
+                {
+                    small: 'месяца',
+                    val: '2',
+                    text: 'средняя продолжительность бракоразводного процесса'
+                },
+                {
+                    small: '%',
+                    val: '100',
+                    text: 'конфиденциальность'
+                }
+            ] %}
+
+                <div class="digits__col col-3 col-lg-6 col-xs-12">
+                    <div class="digits__item">
+                        <div class="digits__num">
+                            {% if item.reverse %}
+                                <span class="digits__small">{{ item.small }}</span>
+                                <span class="digits__val">{{ item.val }}</span>
+                            {% else %}
+                            <span class="digits__val">{{ item.val }}</span>
+                                <span class="digits__small">{{ item.small }}</span>
+                            {% endif %}
+                        </div>
+                        <div class="digits__text">{{ item.text }}</div>
+                    </div>
+                </div>
+                
+            {% endfor %}
+        </div>
+    </div>
+</section>

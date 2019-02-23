@@ -65,7 +65,12 @@
         height: 100%
         align-items: center
         color: $white
-    
+    &__form-title
+        font-size: 18px
+        line-height: 2rem
+        margin-bottom: 3rem
+        font-weight: 300
+
 
 .hero-menu
     height: 100%
@@ -197,3 +202,21 @@
         p 
             font-size: 14px
             line-height: 2.07
+
+.hero-list
+    margin-top: 30px
+    &__item
+        position: relative
+        padding-left: 42px
+        font-size: 16px
+        line-height: 2
+        color: rgba($white,.5)
+        &:before
+            content: ''
+            position: absolute
+            top: 15px
+            left: 0
+            width: 20px
+            height: 2px
+            background-color: $main
+

@@ -24,13 +24,43 @@
                 title: 'Как делить кредиты и долги после развода',
                 text: 'Согласно закону не только имущество, которое было приобретено в браке, подлежит разделу',
                 horizontal: true
+            },
+            {
+                img: 'article3.jpg',
+                date: '15 ДЕКАБРЯ 2018',
+                title: 'Как делить кредиты и долги после развода',
+                text: 'Согласно закону не только имущество, которое было приобретено в браке, подлежит разделу',
+                horizontal: true
+            },
+            {
+                img: 'article4.jpg',
+                date: '15 ДЕКАБРЯ 2018',
+                title: 'Как наследуют имущество внебрачные дети?',
+                text: 'Согласно ст. 1142 ГК РФ наследниками первой очереди являются дети, супруг и родители',
+                horizontal: true
+            },
+            {
+                img: 'article5.jpg',
+                date: '15 ДЕКАБРЯ 2018',
+                title: 'Внебрачные дети. Права',
+                text: 'Внебрачные дети наделены такими же правами, как и дети, которые рождены в',
+                horizontal: true
+            },
+            {
+                img: 'article6.jpg',
+                date: '15 ДЕКАБРЯ 2018',
+                title: 'Часто задаваемые вопросы про материнский капитал',
+                text: 'Раздел "Вопросы и ответы" по материнскому капиталу включает в себя вопросы, которые',
+                horizontal: true
             }
         ] %}
-        <div class="articles-list__article" data-aos="fade-up">
-            {{ mixins.articleCard(item) }}
-        </div>
-            
-
+            <div class="articles-list__article" data-aos="fade-up">
+                {{ mixins.articleCard(item) }}
+            </div>
         {% endfor %}
+        <div class="pagination">
+            <a href="#" class="pagination__item is-active">1</a>
+            <a href="#" class="pagination__item">2</a>
+        </div>
     </div>
 </div>

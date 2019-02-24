@@ -70,6 +70,9 @@
             transform: translateX(0)
     +md
         min-height: 280px
+    &_low
+        min-height: 210px
+        cursor: pointer
     &__name,
     &__continue,
     &__more
@@ -120,3 +123,28 @@
             height: 100%
             object-fit: cover
             object-position: center
+
+.services-list
+    &__col
+        margin-bottom: 1.5rem
+
+.services-callback
+    padding: 60px
+    background-color: $block-bg
+    height: 100%
+    display: flex
+    align-items: center
+    &__row
+        align-items: center
+        margin: 0
+    &__col
+        padding: 0
+        &:not(:first-child)
+            padding-left: 1rem
+    &__text
+        font-size: 18px
+        span
+            color: $main
+            display: block
+            +sm
+                display: inline

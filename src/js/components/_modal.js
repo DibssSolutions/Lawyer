@@ -10,6 +10,9 @@ import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
     
     control.on('click', e => {
       e.preventDefault();
+      if (control.is('[data-services-text]')) {
+        modal.find('[data-text-container]').text(control.data('services-text'));
+      }
       modals.removeClass(OPEN);
       modal.addClass(OPEN);
       controls.removeClass(ACTIVE);
@@ -54,3 +57,8 @@ import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
 //       </div>
 //     </div>
 //   </div>
+// const serviceItems = $('[data-services-text]');
+// serviceItems.on('click', (i, serviceItem) => {
+//   let container = serviceItem.find('[data-text-container]');
+//   container.text(serviceItem.data('services-text'));
+// });

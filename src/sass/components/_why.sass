@@ -1,0 +1,20 @@
+.why
+    &__title
+        span
+            display: block
+            +md
+                display: inline
+    &__wrap
+        padding: 100px
+        background-color: $block-bg
+        +r(1590)
+            padding: 60px
+        +sm
+            padding: 40px
+        +xs
+            padding: 30px
+    &__text
+        line-height: 1.75
+        p
+            &:not(:first-child)
+                padding-top: 30px

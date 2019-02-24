@@ -1,0 +1,44 @@
+.steps
+    &__item
+        &:not(:first-child)
+            margin-top: 1.5rem
+
+.steps-item
+    &__left
+        position: relative
+        padding: 80px 50px
+        height: 100%
+        background-color: #f0f0f0
+        display: flex
+        align-items: center
+        +r(1590)
+            padding: 60px 30px
+    &__name
+        font-size: 20px
+        line-height: 1.6
+        font-weight: 300
+        .steps-item:last-child &
+            color: $main
+    &__num
+        color: #fff
+        font-size: 80px
+        font-weight: 300
+        position: absolute
+        bottom: -10px
+        right: 40px
+        line-height: 1
+        +lg
+            font-size: 60px
+    &__right
+        padding: 80px 66px
+        height: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        background-color: $card-bg
+        +r(1590)
+            padding: 60px 45px
+        +lg
+            padding: 60px 30px
+    &__text
+        line-height: 1.625

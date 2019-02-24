@@ -1,0 +1,45 @@
+.services-price
+    padding: 100px 0
+    color: $white
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center
+    +sm
+        padding: 60px 0
+    &__row
+        align-items: center
+        justify-content: space-between
+    &__col
+        &:not(:first-child)
+            margin-top: 3rem
+
+.price-list
+    &__item
+        display: flex
+        align-items: center
+        justify-content: space-between
+        padding: 25px 30px
+        +xs
+            padding: 15px
+            flex-direction: column
+        &:nth-child(2n)
+            background-color: rgba($white,.06)
+    &__text
+        width: 70%
+        padding-right: 5px
+        font-size: 16px
+        line-height: 1.625
+        letter-spacing: .26px
+        +xs
+            font-size: 14px
+            width: 100%
+            text-align: center
+    &__val
+        width: 30%
+        padding-left: 5px
+        color: $main
+        white-space: nowrap
+        +xs
+            width: 100%
+            text-align: center
+            margin-top: 10px

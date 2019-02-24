@@ -1,0 +1,77 @@
+<section class="cases">
+    <div class="cases__inner inner">
+        <h2 class="cases__title title" data-aos="fade-up">
+            Дела из практики
+        </h2>
+        <div class="cases__content">
+            <div class="cases__list">
+                {% for item in [
+                    {
+                        title: 'Раздел имущества при наличии брачного контракта.',
+                        description: 'К нам обратилась гражданка К., сбежавшая от мужа-«деспота» с двумя детьми в Подмосковье к маме. 
+                        Девушке срочно требовалось оформить развод, чтобы защитить себя и детей, но ситуация была осложнена тем, что 
+                        супруга не имела финансовых средств (муж запрещал работать). Так как до брака гражданка К. не подозревала о 
+                        жестком характере супруга, она подписала брачный контракт.',
+                        actions: 'Мы приняли поручение в тот момент, когда истица уже подала иск, что осложняло грамотное решение 
+                        конфликта с нашей стороны. Однако, мы приложили все усилия и выяснили, что незадолго до конфликта, супруг 
+                        обманным путем получил подпись матери истицы и передал во владение тещи недвижимость, обремененную на несколько 
+                        лет вперед. С помощью этого и других фактов об особенностях ведения бизнеса бывшим супругом, мы вышли на переговоры 
+                        с ответчиком. по которому в случае развода не получала никакого имущества.',
+                        result: 'Дело благополучно разрешилось мировым соглашением. Супруга получила половину совместно нажитого имущества.'
+                    }
+                ] %}
+                    <div class="cases__item cases-item" data-aos="fade-up">
+                        <div class="cases-item__block">
+                            <div class="cases-item__head">Дело:</div>
+                            <div class="cases-item__title">{{ item.title }}</div>
+                        </div>
+                        <div class="cases-item__block">
+                            <div class="cases-item__head">Описание:</div>
+                            <div class="cases-item__text">
+                                <p>
+                                    {{ item.description }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cases-item__block">
+                            <div class="cases-item__head">Предпринятые действия:</div>
+                            <div class="cases-item__text">
+                                <p>
+                                    {{ item.actions }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cases-item__block">
+                            <div class="cases-item__head">Результат:</div>
+                            <div class="cases-item__text">
+                                <p>
+                                    {{ item.result }}
+                                </p>
+                            </div>
+                        </div>
+                        <div class="cases-item__footer">
+                            <div class="cases-item__row row">
+                                <div class="col-8 col-sm-12">
+                                    <div class="cases-item__author">
+                                        <div class="cases-item__photo">
+                                            <img src="./img/u1.jpg" alt="lawyer">
+                                        </div>
+                                        <div class="cases-item__info">
+                                            <div class="cases-item__info-title">Дело вел(а):</div>
+                                            <div class="cases-item__info-name">Кремер Юлия Дмитриевна</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 col-sm-12">
+                                    <div class="cases-item__img">
+                                        <img src="./img/kremer.png" alt="signature">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>

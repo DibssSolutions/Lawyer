@@ -1,0 +1,72 @@
+<section class="services-price" style="background-image: url('img/bg-2.jpg');">
+    <div class="services-price__inner inner" data-aos="fade-up">
+        <div class="services-price__row row">
+            <div class="services-price__col col-6 col-md-12">
+                <div class="services-price__list price-list">
+                    {% for item in [
+                        {
+                            text: 'Консультация по телефону',
+                            val: 'Бесплатно'
+                        },
+                        {
+                            text: 'Личная встреча
+                            с адвокатом в офисе',
+                            val: '5 000 ₽'
+                        },
+                        {
+                            text: 'В случае заключения договора',
+                            val: 'Бесплатно'
+                        },
+                        {
+                            text: 'Расторжение брака в суде без присутствия супругов',
+                            val: 'Индивидуально'
+                        },
+                        {
+                            text: 'Расторжение брака в суде и раздел совместно нажитого имущества',
+                            val: 'Индивидуально'
+                        },
+                        {
+                            text: 'Расторжение брака в суде, раздел совместно нажитого имущества, определение места жительства детей',
+                            val: 'Индивидуально'
+                        }
+                    ] %}
+                        <div class="price-list__item">
+                            <div class="price-list__text">{{ item.text }}</div>
+                            <div class="price-list__val">{{ item.val }}</div>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="services-price__col col-5 col-md-12">
+                <div class="services-price__form">
+                    <form action="" class="form">
+                        <h2 class="form__title title-lg">
+                            Оставьте заявку для обратной связи
+                        </h2>
+                        <div class="divider-lg"></div>
+                        <div class="form-group">
+                            <input type="text" class="form-input" placeholder="Ваше имя">
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" class="form-input" placeholder="Введите телефон">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn_white btn_green btn_lg btn_w100 btn_transf">
+                                Отправить заявку
+                            </button>
+                        </div>
+                        <div class="form-group">
+                            <div class="politic-desclamer">
+                                <label class="checkbox js-checkbox">
+                                    <input class="checkbox__input" type="checkbox" checked name="politic">
+                                    <div class="checkbox__icon"></div>
+                                    <div class="checkbox__label">Нажимая на кнопку, Вы соглашаетесь на обработку <a href="#" target="_blank">персональных данных</a></div>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

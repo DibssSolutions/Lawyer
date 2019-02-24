@@ -39,7 +39,7 @@
                   <a href="/services-individual" class="burger-menu__link">Физическим лицам</a>
                 </li>
                 <li class="burger-menu__item">
-                  <<<<<<< HEAD <a href="/articles.html" class="burger-menu__link">Статьи</a> ======= <a href="/articles" class="burger-menu__link">Статьи</a> >>>>>>> 577414771e2e729075ae3b5ac3aca67b98a083f0
+                  <a href="/articles" class="burger-menu__link">Статьи</a>
                 </li>
                 <li class="burger-menu__item">
                   <a href="/contacts" class="burger-menu__link">Контакты</a>
@@ -640,39 +640,41 @@
         </div>
       </div>
     </div>
-    <!-- BEGIN scripts -->
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=7a9648bf-398b-4673-ad66-512ef28875ce&lang=ru_RU" type="text/javascript"></script>
     <script type="text/javascript" src="js/app.js"></script>
     <script src="https://api-maps.yandex.ru/2.1/?apikey=7a9648bf-398b-4673-ad66-512ef28875ce&lang=ru_RU" type="text/javascript"></script>
     <script>
-      ymaps.ready(function()
+      if (document.querySelector('#map'))
       {
-        var map = new ymaps.Map('map',
+        ymaps.ready(function()
         {
-          center: [55.76, 37.64],
-          zoom: 10
-        });
-        map.behaviors.disable('scrollZoom');
-        map.controls.remove('smallMapDefaultSet');
-        //   map.controls.remove('searchControl');
-        map.controls.remove('trafficControl');
-        //   map.controls.remove('routeEditor');
-        map.controls.remove('rulerControl');
-        map.container.fitToViewport();
-        if (map)
-        {
-          ymaps.modules.require(['Placemark', 'Circle'], function(Placemark, Circle)
+          var map = new ymaps.Map('map',
           {
-            var placemark = new Placemark([55.76, 37.64],
-            {
-              balloonContentBody: 'В студеную зимнюю пору'
-            });
-            map.geoObjects.add(placemark);
-            // Балун откроется в точке «привязки» балуна — т. е. над меткой.
-            myPlacemark.balloon.open();
+            center: [55.76, 37.64],
+            zoom: 10
           });
-        }
-      });
+          map.behaviors.disable('scrollZoom');
+          map.controls.remove('smallMapDefaultSet');
+          //   map.controls.remove('searchControl');
+          map.controls.remove('trafficControl');
+          //   map.controls.remove('routeEditor');
+          map.controls.remove('rulerControl');
+          map.container.fitToViewport();
+          if (map)
+          {
+            ymaps.modules.require(['Placemark', 'Circle'], function(Placemark, Circle)
+            {
+              var placemark = new Placemark([55.76, 37.64],
+              {
+                balloonContentBody: 'В студеную зимнюю пору'
+              });
+              map.geoObjects.add(placemark);
+              // Балун откроется в точке «привязки» балуна — т. е. над меткой.
+              myPlacemark.balloon.open();
+            });
+          }
+        });
+      }
+      }
 
     </script>
     <!-- END scripts -->

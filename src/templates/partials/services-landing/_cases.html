@@ -3,29 +3,7 @@
         <h2 class="cases__title title" data-aos="fade-up">
             Дела из практики
         </h2>
-        <div class="cases__content js-cases-slider-parent">
-            <div class="arrow-prev js-slider-arrow-prev">
-                <span class="arrow-more">
-                    <span class="arrow-more__icon">
-                        <span class="arrow-more__icon-inner">
-                            <span class="arrow-more__icon-wrap">
-                                {{ mixins.icon('arrow-long') }}
-                            </span>
-                        </span>
-                    </span>
-                </span>
-            </div>
-            <div class="arrow-next js-slider-arrow-next">
-                <span class="arrow-more">
-                    <span class="arrow-more__icon">
-                        <span class="arrow-more__icon-inner">
-                            <span class="arrow-more__icon-wrap">
-                                {{ mixins.icon('arrow-long') }}
-                            </span>
-                        </span>
-                    </span>
-                </span>
-            </div>
+        <div class="cases__content">
             <div class="cases__list js-cases-slider"  data-aos="fade-up">
                 {% for item in [
                     {

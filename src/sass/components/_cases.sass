@@ -45,13 +45,16 @@
     width: 30px
     height: 30px
     border-radius: 50%
-    background-color: $main
+    background-color: rgba($main,.5)
     color: $white
     display: flex
     align-items: center
     justify-content: center
     cursor: pointer
+    transition: background-color .3s ease
+    z-index: 10
     +hover
+        background-color: $main
         .arrow-more__icon-inner
             max-width: calc(100% - 5px)
     +xs
@@ -63,19 +66,11 @@
             width: 15px
             margin: 0
 .arrow-prev
-    left: 40px
-    +lg
-        left: 20px
-    +md
-        left: -40px
+    left: -40px
     .arrow-more
         transform: rotate(180deg)
 .arrow-next
-    right: 40px
-    +lg
-        right: 20px
-    +md
-        right: -40px
+    right: -40px
 
 .cases-item
     padding: 100px

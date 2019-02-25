@@ -15,12 +15,12 @@ if(document.querySelector('#map')) {
     if (map) {
       ymaps.modules.require(['Placemark', 'Circle'], function(Placemark, Circle) {
         var placemark = new Placemark([55.76, 37.64],{
-          balloonContentBody: 'В студеную зимнюю пору'
+          balloonContentBody: 'ул. Садовая-Спасская дом 21/1 офис 321'
         });
         map.geoObjects.add(placemark);
 
         // Балун откроется в точке «привязки» балуна — т. е. над меткой.
-        myPlacemark.balloon.open();
+        // placemark.balloon.open();
       });
     }
   });

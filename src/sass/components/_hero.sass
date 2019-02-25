@@ -119,7 +119,14 @@
         transform: translateX(-40px)
         transition: transform .3s ease, opacity .3s ease
         transition-delay: .2s
-        color: rgba($white,.3)
+        .arrow-more
+            color: rgba($white,.3)
+            +hover
+                color: rgba($white,.3)
+            &__icon
+                +md
+                    width: 26px
+
 
 
 .arrow-more
@@ -130,7 +137,7 @@
     +hover
         color: currentColor
         .arrow-more__icon-inner
-            max-width: 70px
+            max-width: calc(100% - 14px)
     &__text
         transition: color .5s ease
     &__icon
@@ -147,7 +154,7 @@
     &__icon-inner
         position: absolute
         right: 0
-        max-width: 84px
+        max-width: 100%
         width: 100%
         overflow: hidden
         height: 100%

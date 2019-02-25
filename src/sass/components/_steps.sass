@@ -1,4 +1,5 @@
 .steps
+    counter-reset: steps
     &__item
         &:not(:first-child)
             margin-top: 1.5rem
@@ -17,6 +18,20 @@
         font-size: 20px
         line-height: 1.6
         font-weight: 300
+        &:after
+            counter-increment: steps
+            content: counter(steps)
+            position: absolute
+            color: #fff
+            font-size: 80px
+            font-weight: 300
+            position: absolute
+            bottom: -10px
+            right: 40px
+            line-height: 1
+            +lg
+                font-size: 60px
+                bottom: -7px
         .steps-item:last-child &
             color: $main
     &__num

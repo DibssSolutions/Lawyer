@@ -1,6 +1,23 @@
 .form
     &-group
         margin-bottom: 24px
+        position: relative
+        &.has-error
+            animation-name: input-error
+            animation-duration: 1s
+            animation-fill-mode: both
+            border: 1px solid red
+        .help-block.form-error
+          position: absolute
+          top: 100%
+          left: 0
+          padding-top: 2px
+          font-size: 12px
+          font-weight: 400
+          color: red
+        .checkbox ~ .help-block.form-error
+            opacity: 0
+            visibility: hidden
     &-input
         display: block
         width: 100%
@@ -25,8 +42,41 @@
             color: $white
             +placeholder
                 color: $white
+
 textarea.form-input
     height: auto
     padding: 20px
     resize: none
     min-height: 118px
+
+@keyframes input-error 
+    10%, 90% 
+        transform: translate3d(-1px, 0, 0)
+    
+    20%,
+    80% 
+        transform: translate3d(2px, 0, 0)
+    
+    30%,
+    50%,
+    70% 
+        transform: translate3d(-4px, 0, 0)
+    
+    40%,
+    60% 
+        transform: translate3d(4px, 0, 0)
+    
+// .help-block.form-error
+//   position: fixed
+//   bottom: 0
+//   left: 0
+//   width: 100%
+//   padding: 30px 20px
+//   text-align: center
+//   font-size: 24px
+//   background-color: red
+
+// @keyframes alertFade
+//   to 
+//     opacity: 1
+//     visibility: visible

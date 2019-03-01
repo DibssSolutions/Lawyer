@@ -132,7 +132,10 @@ a
 	-ms-flex-align: center
 	align-items: center
 	&__input
-		display: none
+		// display: none
+		opacity: 0
+		visibility: hidden
+		position: absolute
 	&__label
 		font-size: 12px
 		text-align: left
@@ -152,6 +155,8 @@ a
 		background-color: $block-bg
 		// transition: all .5s ease
 		margin-right: 18px
+		.has-error &
+			border: 1px solid red
 		+hover
 			&:before
 				transform: scale(.5) rotate(45deg) translate(-1px,-1px)
@@ -246,7 +251,7 @@ a
 	margin: 4px 15px 0 0
 	vertical-align: top
 	display: inline-block
-    
+		
 .pagination
 	text-align: center
 	&__item

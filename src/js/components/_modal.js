@@ -11,7 +11,7 @@ import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
     control.on('click', e => {
       e.preventDefault();
       if (control.is('[data-services-text]')) {
-        modal.find('[data-text-container]').text(control.data('services-text'));
+        modal.find('[data-text-container]').text(control.text());
       }
       modals.removeClass(OPEN);
       modal.addClass(OPEN);

@@ -4,6 +4,7 @@ body
 	font-size: 16px
 	font-weight: 400
 	color: $dark
+	+smooth-font
 	+manrope
 	&.is-overflow-hidden,
 	&.is-open-popup
@@ -21,7 +22,8 @@ a
 .title
 	font-size: 30px
 	font-weight: 300
-	margin-bottom: 26px
+	max-width: 665px 
+	margin: 0 auto 26px
 	text-align: center
 	+sm
 		font-size: 24px
@@ -249,7 +251,8 @@ a
     
 .pagination
 	text-align: center
-	&__item
+	&__item,
+	.page-numbers
 		display: inline-block
 		position: relative
 		min-width: 10px
@@ -269,7 +272,8 @@ a
 			height: 6px
 			background-color: #666565
 			border-radius: 50%
-		&.is-active
+		&.is-active,
+		&.current
 			color: $main
 			&:before
 				background-color: $main

@@ -1,5 +1,6 @@
 .hero
     padding-top: 100px
+    padding-bottom: 40px 
     min-height: 100vh
     position: relative
     overflow: hidden
@@ -53,6 +54,7 @@
         color: rgba($white,.2)
         text-transform: uppercase
         letter-spacing: 2.59px
+        max-width: 245px 
     &__title
         &:not(:first-child)
             margin-top: 30px
@@ -214,12 +216,13 @@
 
 .hero-list
     margin-top: 30px
-    &__item
+    font-size: 16px
+    color: rgba($white,.5)
+    &__item,
+    li
         position: relative
         padding-left: 42px
-        font-size: 16px
         line-height: 2
-        color: rgba($white,.5)
         &:before
             content: ''
             position: absolute

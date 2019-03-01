@@ -50,7 +50,22 @@
         text-align: justify
         margin-bottom: 40px
         p
+            position: relative
             line-height: 1.85
             &:not(:last-child)
                 margin-bottom: 27px
+            &:last-child
+                margin-top: 56px
+                &:before
+                    position: absolute
+                    content: ""
+                    top: -26px
+                    left: 0
+                    width: 37px
+                    height: 1px
+                    background-color: $main
+            &:first-child
+                margin-top: 0
+                &:before
+                    display: none
     

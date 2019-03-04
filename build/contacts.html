@@ -50,15 +50,27 @@
         </div>
         <div class="header__wrap" data-aos="fade-down" data-aos-delay="600">
           <div class="header__contacts">
-            <a href="tel:+79104449659" class="header__link">
-              <span class="header__link-icon">
+            <a href="tel:+79104449659" class="header-link header-link_phone">
+              <span class="header-link__icon">
                 <svg class="icon icon-phone">
                   <use xlink:href="img/sprite.svg#icon-phone"></use>
                 </svg>
               </span>
-              <span class="header__link-text">+7 910 444 96 59</span>
             </a>
-            <a href="mailto:test@mail.com" class="email">test@mail.com</a>
+            <a href="tg://" class="header-link header-link_telegram">
+              <span class="header-link__icon">
+                <svg class="icon icon-telegram-logo">
+                  <use xlink:href="img/sprite.svg#icon-telegram-logo"></use>
+                </svg>
+              </span>
+            </a>
+            <a href="mailto:test@mail.com" class="header-link header-link_email">
+              <span class="header-link__icon">
+                <svg class="icon icon-email">
+                  <use xlink:href="img/sprite.svg#icon-email"></use>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
       </header>
@@ -179,7 +191,7 @@
       </footer>
     </div>
     <!-- END content -->
-    <div class="modal" data-modal="feedback1">
+    <div class="modal" data-modal='feedback'>
       <div class="modal__container" data-modal-container>
         <div class="modal__inner">
           <button class="modal__close" data-modal-close>
@@ -188,31 +200,6 @@
             </svg>
           </button>
           <div class="feedback-modal">
-            <div class="feedback-modal__name">Михаил К.</div>
-            <div class="feedback-modal__text">
-              <p> Выражаю свою благодарность Кремер Юлии Дмитриевне за оперативное решение наших проблем несмотря на огромное расстояние. Мы с бывшей супругой приняли обоюдное решение расстаться, без ссор, скандалов и долгих судебных тяжб. Но так как оба проживаем в США, а брак зарегистрирован в России, обратиться в органы было затруднительно. </p>
-              <p> Обратились к знакомому адвокату в России, сказал, что ничем не может помочь —&nbsp;необходимо личное присутствие. Стали спрашивать у друзей, в итоге нашли Юлию. Так как мы находимся далеко и не было возможности провести личную встречу, адвокат провела нам консультацию по скайпу на следующий же день после обращения. </p>
-              <p> Результат таков, что меньше чем за месяц мы с бывшей супругой получили все необходимые бумаги и спокойно разъехались. </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="modal" data-modal="feedback2">
-      <div class="modal__container" data-modal-container>
-        <div class="modal__inner">
-          <button class="modal__close" data-modal-close>
-            <svg class="icon icon-close">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-          <div class="feedback-modal">
-            <div class="feedback-modal__name">Ольга Р.</div>
-            <div class="feedback-modal__text">
-              <p> Юлия Дмитриевна, вы просто спасли меня и моего сына! </p>
-              <p> Бывший муж не хотел отпускать меня и супруга, но и жить с ним дальше было невозможно. Я не хотела бы описывать всю ситуацию, вспоминаю те дни с огромной горечью… Главное, что кошмар окончен! Юлия Дмитриевна в считанные дни нашла способы обезопасить нас от мужа и помогла сохранить имущество, принадлежавшее мне до замужества. </p>
-              <p> Девушки, если у вас сложная ситуация в семье, вы на грани и думаете, что это конец — не медлите, обратитесь к Юлии Дмитриевне! </p>
-            </div>
           </div>
         </div>
       </div>
@@ -239,7 +226,7 @@
                 <div class="form-group">
                   <div class="politic-desclamer">
                     <label class="checkbox js-checkbox">
-                      <input class="checkbox__input" type="checkbox" name="politic" data-validation="required" data-validation-event="keyup change">
+                      <input class="checkbox__input" type="checkbox" name="politic" checked data-validation="required" data-validation-event="keyup change">
                       <div class="checkbox__icon"></div>
                       <div class="checkbox__label">Нажимая на кнопку, Вы соглашаетесь на обработку <a href="#" target="_blank">персональных данных</a></div>
                     </label>

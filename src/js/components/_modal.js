@@ -1,17 +1,23 @@
-import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
+import { OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN } from './../constants';
 
-;(() => {
-
+(() => {
   const controls = $('[data-modal-control]');
   const modals = $('[data-modal]');
   controls.each((i, control) => {
     control = $(control);
-    const modal = modals.filter(`[data-modal="${control.data('modal-control')}"]`);
-    
+    const modal = modals.filter(
+      `[data-modal="${control.data('modal-control')}"]`
+    );
+
     control.on('click', e => {
       e.preventDefault();
       if (control.is('[data-services-text]')) {
         modal.find('[data-text-container]').text(control.text());
+      }
+      if (control.is('[data-modal-content]')) {
+        const modalContent = control.data('modal-content');
+        const modalInner = modal.find('.feedback-modal');
+        modalInner.html(modalContent);
       }
       modals.removeClass(OPEN);
       modal.addClass(OPEN);
@@ -31,8 +37,11 @@ import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
     };
 
     BODY.on('click', e => {
-      if (!$(e.target).closest(inner).length && modal.hasClass(OPEN) && !$(e.target).closest(controls).length) {
-        
+      if (
+        !$(e.target).closest(inner).length &&
+        modal.hasClass(OPEN) &&
+        !$(e.target).closest(controls).length
+      ) {
         hide();
         controls.removeClass(ACTIVE);
       }
@@ -43,7 +52,6 @@ import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
       hide();
     });
   });
-
 })();
 // ----------------------  HTML EXEMPLE ---------------------
 // <a href="#" data-modal-control="modalname"></a> ---- trigger
@@ -53,7 +61,7 @@ import {OPEN, ACTIVE, BODY, OVERFLOW_HIDDEN} from './../constants';
 //         <button class="modal__close" data-modal-close>
 //           {{mixins.icon('close')}}
 //         </button>
-        
+
 //       </div>
 //     </div>
 //   </div>

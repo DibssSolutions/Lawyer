@@ -34,11 +34,15 @@
     </div>
     <div class="header__wrap" data-aos="fade-down" data-aos-delay="600">
         <div class="header__contacts">
-            <a href="tel:+79104449659" class="header__link">
-                <span class="header__link-icon">{{ mixins.icon('phone') }}</span>
-                <span class="header__link-text">+7 910 444 96 59</span>
+            <a href="tel:+79104449659" class="header-link header-link_phone">
+                <span class="header-link__icon">{{ mixins.icon('phone') }}</span>
             </a>
-            <a href="mailto:test@mail.com" class="email">test@mail.com</a>
+            <a href="tg://" class="header-link header-link_telegram">
+                <span class="header-link__icon">{{ mixins.icon('telegram-logo') }}</span>
+            </a>
+            <a href="mailto:test@mail.com" class="header-link header-link_email">
+                <span class="header-link__icon">{{ mixins.icon('email') }}</span>
+            </a>
         </div>
     </div>
 </header>

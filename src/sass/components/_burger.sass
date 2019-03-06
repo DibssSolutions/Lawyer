@@ -83,16 +83,20 @@
         justify-content: flex-start
         +sm
             padding-top: 110px
-    &__content
+    &__content,
+    .menu-main_menu-container
         overflow-y: auto
         max-height: 100%
     &__list
-    &__item
+    &__item,
+    .menu-item
         position: relative
         padding-left: 40px
         &:not(:first-child)
             margin-top: 20px
-        &.is-active
+        &.is-active,
+        &.active,
+        &.current-menu-item
             &:before
                 content: ''
                 position: absolute
@@ -103,9 +107,9 @@
                 bottom: 0
                 left: 0
                 margin: auto
-    &__link
-        color: $white
-        font-size: 18px
-        transition: color .3s
-        +hover
-            color: $main
+        a
+            color: $white
+            font-size: 18px
+            transition: color .3s
+            +hover
+                color: $main
